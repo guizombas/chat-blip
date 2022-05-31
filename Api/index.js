@@ -31,6 +31,7 @@ function compareDateStrings(dateA, dateB){
     return new Date(dateA).getTime() - new Date(dateB).getTime()
 }
 
-app.listen(3001, ()=>{
-    console.log("listening to port 3001");
+const port = process.env.PORT || 3001;
+app.listen(port, ()=>{
+    console.log("listening to port " + port);
 })
