@@ -1,1 +1,0 @@
-cd ./Api && npm i && node ./
